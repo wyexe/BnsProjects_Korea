@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TaiWan|Win32">
+      <Configuration>TaiWan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78A0F79C-06A6-45ED-90FF-B7E2A1B7F791}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleDLL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\include;..\..\MyTools;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>C:\BnsKor\CopyFile\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\include;..\..\MyTools;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>C:\BnsKor\CopyFile\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\include;..\..\MyTools;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>C:\Users\Lin-Test\Desktop\BnsKor\CopyFile\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CONSOLEDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_USRDLL;CONSOLEDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PreBuildEvent>
+      <Command>del $(IntDir)\CPublic.obj</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_USRDLL;CONSOLEDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\MyTools\MyTools\Character.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLAsync.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLClient.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLClientIoEvent.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLErrMsg.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpression.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpressionCalc.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLFile.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLGrammar.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLHook.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLInjector.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLLock.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLNoModuleDLL.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLPic.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLProcess.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLPublic.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLResManager.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLThread.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CmdLog.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\ConditionPrint.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\LDasm.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\LdrHeader.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\Log.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\RelfexClass.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\RelfexStruct.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\SocketBuffer.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\SocketClient.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\TimeTick.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\ToolsPublic.h" />
+    <ClInclude Include="..\BnsProjects\BnsConfig.h" />
+    <ClInclude Include="AccountMgr.h" />
+    <ClInclude Include="AccountVirtualSeriaNumber.h" />
+    <ClInclude Include="BnsProcExtend.h" />
+    <ClInclude Include="ConsoleCard.h" />
+    <ClInclude Include="CmdLogService.h" />
+    <ClInclude Include="ConsoleDump.h" />
+    <ClInclude Include="ConsoleFun.h" />
+    <ClInclude Include="ConsoleLog.h" />
+    <ClInclude Include="ConsoleVariable.h" />
+    <ClInclude Include="ConsoleClient.h" />
+    <ClInclude Include="NcLanucherLogin.h" />
+    <ClInclude Include="OptimizeGame.h" />
+    <ClInclude Include="SocketAPI.h" />
+    <ClInclude Include="SortWindowService.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="VirtualSeriaNumberCommon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\MyTools\MyTools\Character.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLAsync.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLClient.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLClientIoEvent.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLErrMsg.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpression.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpressionCalc.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLFile.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLGrammar.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLHook.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLInjector.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLLock.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLNoModuleDLL.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLPic.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLProcess.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLThread.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CmdLog.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CPublic.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\LDasm.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\LdrHeader.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\Log.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\RelfexClass.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\RelfexStruct.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\SocketBuffer.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\TimeTick.cpp" />
+    <ClCompile Include="..\BnsProjects\BnsConfig.cpp" />
+    <ClCompile Include="AccountMgr.cpp" />
+    <ClCompile Include="AccountVirtualSeriaNumber.cpp" />
+    <ClCompile Include="BnsProcExtend.cpp" />
+    <ClCompile Include="ConsoleCard.cpp" />
+    <ClCompile Include="CmdLogService.cpp" />
+    <ClCompile Include="ConsoleDLL.cpp" />
+    <ClCompile Include="ConsoleDump.cpp" />
+    <ClCompile Include="ConsoleFun.cpp" />
+    <ClCompile Include="ConsoleLog.cpp" />
+    <ClCompile Include="ConsoleVariable.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ConsoleClient.cpp" />
+    <ClCompile Include="NcLanucherLogin.cpp" />
+    <ClCompile Include="OptimizeGame.cpp" />
+    <ClCompile Include="SocketAPI.cpp" />
+    <ClCompile Include="SortWindowService.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

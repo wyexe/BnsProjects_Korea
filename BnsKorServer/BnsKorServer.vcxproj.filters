@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{a31e9344-a1eb-483d-98e4-9df60fb3fe06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{0e2e9a0e-6c85-40e4-bc9a-60d480a501bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{0b642312-8d76-42fc-be0e-658e8f4bf453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ver">
+      <UniqueIdentifier>{7f145299-9b8a-415d-838c-6001eeb13791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Deal">
+      <UniqueIdentifier>{a70bf918-4f29-483a-ac7d-177f6479f23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Team">
+      <UniqueIdentifier>{f8eb8c7d-8ea2-404d-8b19-36bfd137fdfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dump">
+      <UniqueIdentifier>{721635a7-a384-46f5-806e-35c606f71c7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{8ec3d498-7e88-445f-8224-6b4119231dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OTP">
+      <UniqueIdentifier>{12cd9677-f7a2-41ee-a049-92fa0b5d6571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DailyTask">
+      <UniqueIdentifier>{02083e68-6736-45c1-84f1-72d9155d11bf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\Character.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLErrMsg.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLLock.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLProcess.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLSearchBase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLThread.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CPublic.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBaseModel.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="VerManage.cpp">
+      <Filter>Ver</Filter>
+    </ClCompile>
+    <ClCompile Include="VerSocket.cpp">
+      <Filter>Ver</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsDeal.cpp">
+      <Filter>Deal</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsTeam.cpp">
+      <Filter>Team</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniDump.cpp">
+      <Filter>Dump</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpression.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpressionCalc.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\Log.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="OneTimePassword.cpp">
+      <Filter>OTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\TimeTick.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask.cpp">
+      <Filter>DailyTask</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginOTP.cpp">
+      <Filter>OTP</Filter>
+    </ClCompile>
+    <ClCompile Include="TotpCounter.cpp">
+      <Filter>OTP</Filter>
+    </ClCompile>
+    <ClCompile Include="CLHmacSha1.cpp">
+      <Filter>OTP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SocketCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\ByteBuffer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\Character.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLErrMsg.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLLock.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLProcess.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLSearchBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLThread.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\RC4.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\ToolsPublic.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBaseModel.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="VerManage.h">
+      <Filter>Ver</Filter>
+    </ClInclude>
+    <ClInclude Include="VerSocket.h">
+      <Filter>Ver</Filter>
+    </ClInclude>
+    <ClInclude Include="BnsDeal.h">
+      <Filter>Deal</Filter>
+    </ClInclude>
+    <ClInclude Include="BnsTeam.h">
+      <Filter>Team</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniDump.h">
+      <Filter>Dump</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpression.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpressionCalc.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\Log.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="OneTimePassword.h">
+      <Filter>OTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLResManager.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\TimeTick.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask.h">
+      <Filter>DailyTask</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginOTP.h">
+      <Filter>OTP</Filter>
+    </ClInclude>
+    <ClInclude Include="TotpCounter.h">
+      <Filter>OTP</Filter>
+    </ClInclude>
+    <ClInclude Include="CLHmacSha1.h">
+      <Filter>OTP</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

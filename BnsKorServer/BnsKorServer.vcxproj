@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TaiWan|Win32">
+      <Configuration>TaiWan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1C28E8B-D6CD-4D57-B519-549EF3E4AAE6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BnsKorServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\include;..\..\MyTools;$(IncludePath)</IncludePath>
+    <OutDir>C:\Users\Lin-Test\Desktop\BnsKor\</OutDir>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\include;..\..\MyTools;$(IncludePath)</IncludePath>
+    <OutDir>C:\Users\Lin-Test\Desktop\BnsKor\</OutDir>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\include;..\..\MyTools;$(IncludePath)</IncludePath>
+    <OutDir>C:\Users\Lin-Test\Desktop\BnsKor1\</OutDir>
+    <LibraryPath>..\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <StackReserveSize>
+      </StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\MyTools\MyTools\Character.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLErrMsg.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpression.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpressionCalc.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLFile.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLLock.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLProcess.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLSearchBase.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLThread.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CPublic.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\Log.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\TimeTick.cpp" />
+    <ClCompile Include="BnsDeal.cpp" />
+    <ClCompile Include="BnsTeam.cpp" />
+    <ClCompile Include="CLHmacSha1.cpp" />
+    <ClCompile Include="ClientConfig.cpp" />
+    <ClCompile Include="DailyTask.cpp" />
+    <ClCompile Include="LoginOTP.cpp" />
+    <ClCompile Include="OneTimePassword.cpp" />
+    <ClCompile Include="DataBaseModel.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MiniDump.cpp" />
+    <ClCompile Include="SocketCommon.cpp" />
+    <ClCompile Include="SocketServer.cpp" />
+    <ClCompile Include="TotpCounter.cpp" />
+    <ClCompile Include="UpdateFile.cpp" />
+    <ClCompile Include="VerManage.cpp" />
+    <ClCompile Include="VerSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\MyTools\MyTools\ByteBuffer.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\Character.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLErrMsg.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpression.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpressionCalc.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLFile.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLLock.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLProcess.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLPublic.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLResManager.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLSearchBase.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLThread.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\Log.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\RC4.hpp" />
+    <ClInclude Include="..\..\MyTools\MyTools\TimeTick.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\ToolsPublic.h" />
+    <ClInclude Include="BnsDeal.h" />
+    <ClInclude Include="BnsTeam.h" />
+    <ClInclude Include="CLHmacSha1.h" />
+    <ClInclude Include="ClientConfig.h" />
+    <ClInclude Include="DailyTask.h" />
+    <ClInclude Include="LoginOTP.h" />
+    <ClInclude Include="OneTimePassword.h" />
+    <ClInclude Include="DataBaseModel.h" />
+    <ClInclude Include="MiniDump.h" />
+    <ClInclude Include="SocketCommon.h" />
+    <ClInclude Include="SocketServer.h" />
+    <ClInclude Include="TotpCounter.h" />
+    <ClInclude Include="UpdateFile.h" />
+    <ClInclude Include="VerManage.h" />
+    <ClInclude Include="VerSocket.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

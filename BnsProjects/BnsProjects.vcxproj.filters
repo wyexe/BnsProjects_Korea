@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{808374ce-9124-448a-9b3d-2869eaffc7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun">
+      <UniqueIdentifier>{415b53ca-89bd-40de-be57-997240ec3c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\Dump">
+      <UniqueIdentifier>{4c26ab09-57a6-4ea4-8c3d-e4fd9ad84998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\PK">
+      <UniqueIdentifier>{973ef9f1-cc4b-4b86-94d8-fc46e464da35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\ScanBase">
+      <UniqueIdentifier>{5398fd96-635c-4e42-8c47-2096e91bd4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\Hook">
+      <UniqueIdentifier>{68bdd7e7-2f12-4fa8-96d9-7094df942c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\Mail">
+      <UniqueIdentifier>{406dd6b6-ee29-4552-993d-8ed470955a62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\Farm">
+      <UniqueIdentifier>{2d24262d-bdeb-4caa-ba08-178f304c95c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\TaskUpgrade">
+      <UniqueIdentifier>{eeb3152f-908a-4564-a5f0-1eb7ba21a3f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\DX">
+      <UniqueIdentifier>{74dcf7ca-ee64-4ad0-b2a8-f4eb8cb76196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\BaiXianPracticeField">
+      <UniqueIdentifier>{8d2e3030-e23c-4061-b09f-f1db899f012b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script">
+      <UniqueIdentifier>{835c9f0f-8f8b-4b4a-8ba4-948ce8a15ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Grammar">
+      <UniqueIdentifier>{b0907875-09b9-4421-ac94-e10578bf2d84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Filter">
+      <UniqueIdentifier>{d7c65a80-9376-4551-a55f-aeb0243908c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Deal">
+      <UniqueIdentifier>{05033f34-bed2-494d-97f7-33fe052d879a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\Daily">
+      <UniqueIdentifier>{d2a718ec-7ab9-4098-95bc-cae6e3bb45a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects">
+      <UniqueIdentifier>{99aa67f9-2cdc-48bb-a3c7-54a3845060f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\OtherObjects">
+      <UniqueIdentifier>{3208a605-3f4a-4a73-a608-0b6df492f85c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\OtherObjects\Bag">
+      <UniqueIdentifier>{b4a6f099-968f-4231-a99a-0d6a0c4efabe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\OtherObjects\Corpse">
+      <UniqueIdentifier>{6063ceea-f402-4ad7-95f9-d05783c00b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\OtherObjects\Skill">
+      <UniqueIdentifier>{f55923b1-e973-4cbc-ad61-d3da8f4ac631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\OtherObjects\Task">
+      <UniqueIdentifier>{1b831635-cc48-4f8b-903a-ab036320c758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject">
+      <UniqueIdentifier>{0c80acc1-736f-44e0-a7ee-415a0e8ea556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject\Person">
+      <UniqueIdentifier>{9cdb5111-9fe0-41a1-a279-12adb6f1e562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject\Monster">
+      <UniqueIdentifier>{53f30636-8b4e-4ccb-8d47-a784183ebe70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject\Npc">
+      <UniqueIdentifier>{61599e2b-e457-4b05-9d72-03c389b7a5fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject\Player">
+      <UniqueIdentifier>{cce903b4-4a2a-4b21-9e77-c5e9173ff8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject\Team">
+      <UniqueIdentifier>{a65a93da-ae78-4203-b984-fd77a3772532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject\LoginPlayer">
+      <UniqueIdentifier>{310cd359-b5bf-47e8-91fb-c300553da6cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\GameObject\Cat">
+      <UniqueIdentifier>{054f32e7-2f46-4a5d-9a53-59595b05ea8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Objects\ObjectFunction">
+      <UniqueIdentifier>{c6cfc463-a618-4e6d-8a2b-3be62f4364c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{672b0b70-64f4-4333-88e0-7dcc07a32194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text\Language">
+      <UniqueIdentifier>{68702ff7-d9fb-4a92-bef5-c0ffb0fc20ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text\Config">
+      <UniqueIdentifier>{8d1c1b66-bd65-41b3-a754-bd938c3d4157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Variable">
+      <UniqueIdentifier>{6794c321-63eb-43d9-81cf-8acf662b12ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\TeamAuction">
+      <UniqueIdentifier>{472a6a04-5477-46a4-ae70-a6dded32b52c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\Farm\BOSS">
+      <UniqueIdentifier>{0e508e6a-ec40-4dde-986f-fac8d75b5ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\DungoenTeam">
+      <UniqueIdentifier>{cd106668-48c1-40c8-9077-7a1dbcfd67d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyTools">
+      <UniqueIdentifier>{6f5392d0-2310-4837-8d88-b414e2a4d698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Common">
+      <UniqueIdentifier>{a97d1d85-4d3c-46cb-bca3-337b4553fcfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Socket">
+      <UniqueIdentifier>{d76ade51-8b63-41a0-9d63-6124ddb7e6c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Socket\Server">
+      <UniqueIdentifier>{81d7d72f-3100-4c57-bf4b-91a21b87753b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Socket\Team">
+      <UniqueIdentifier>{50f9a866-7b80-4f92-8cba-cde0db43f920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Socket\Team\MainLine">
+      <UniqueIdentifier>{21c5d7ca-52f9-40ae-8c1f-da91282f4fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Socket\Team\Dungeon">
+      <UniqueIdentifier>{6773fc3b-2446-4dd0-a563-d93373701f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Socket\Script">
+      <UniqueIdentifier>{7ff26adc-a3c3-45b5-aaa5-047e8b588de5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Socket\Config">
+      <UniqueIdentifier>{7bb2dfe0-fe0a-4bd6-8ae5-cf07da731999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Team">
+      <UniqueIdentifier>{294dc021-7ff5-4c9c-b0eb-8b699faa96b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Team\CrossAreaTeam">
+      <UniqueIdentifier>{62f3fe76-6930-4293-bfd7-4440117fe0ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Team\CrossAreaTeam\Serivce">
+      <UniqueIdentifier>{464883f2-0fc1-4aaa-b920-5c8c7d401a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Team\CrossAreaTeam\Room">
+      <UniqueIdentifier>{dfd857ec-c7dc-461d-b2b9-05e797db89f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Console">
+      <UniqueIdentifier>{61fd7599-3aa6-493f-9434-bec40e68c84b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Console\Log">
+      <UniqueIdentifier>{c96a895b-c7cc-41be-816f-d69e7894ea6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\BOSS">
+      <UniqueIdentifier>{8ed922ca-23d4-43fe-9b6e-955af2197ae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\BOSS\雪人洞">
+      <UniqueIdentifier>{95b1f2df-6658-4e9e-8e26-9ed830ca6178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\BOSS\鬼门关">
+      <UniqueIdentifier>{83b9c409-7289-421c-8cf7-7e5a399e6deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\BOSS\Common">
+      <UniqueIdentifier>{7d5f08a5-e581-499e-8dc1-8719eee076b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\BOSS\雪玉宫">
+      <UniqueIdentifier>{0ae54378-35ae-4bb5-ad65-b9a76d679d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\BOSS\黑龙教地下监狱">
+      <UniqueIdentifier>{ee0373b7-fbae-47ca-9ed5-ac5dc0e78543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\SomeFun\TimeoutCheck">
+      <UniqueIdentifier>{11c6ea06-8506-4fba-9910-7b8d275c35ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Script\BOSS\遗忘墓地">
+      <UniqueIdentifier>{8721715d-072e-4b6a-b1e9-666458df8fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameLowDesign">
+      <UniqueIdentifier>{5b6c9f0d-3d69-48d9-8a29-47a888db4815}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\Character.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLFile.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLGrammar.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLHook.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLLock.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLProcess.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLPublic.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLSearchBase.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLThread.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\ToolsPublic.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="SomeFun.h">
+      <Filter>Game\SomeFun</Filter>
+    </ClInclude>
+    <ClInclude Include="GameVariable.h">
+      <Filter>Game\Variable</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFunction.h">
+      <Filter>Game\SomeFun</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSend.h">
+      <Filter>Game\SomeFun</Filter>
+    </ClInclude>
+    <ClInclude Include="GrammarFunction.h">
+      <Filter>Game\Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="BnsScript.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="BnsGameFun.h">
+      <Filter>Game\SomeFun</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteBuffer.h">
+      <Filter>Game\SomeFun</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanBase.h">
+      <Filter>Game\SomeFun\ScanBase</Filter>
+    </ClInclude>
+    <ClInclude Include="BnsConfig.h">
+      <Filter>Text\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerKill.h">
+      <Filter>Game\SomeFun\PK</Filter>
+    </ClInclude>
+    <ClInclude Include="SwAccPkMgr.h">
+      <Filter>Game\SomeFun\PK</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniDump.h">
+      <Filter>Game\SomeFun\Dump</Filter>
+    </ClInclude>
+    <ClInclude Include="InstanceZoneScript.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject.h">
+      <Filter>Game\Objects\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
+      <Filter>Game\Objects\OtherObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLErrMsg.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="BnsHook.h">
+      <Filter>Game\SomeFun\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFunction.h">
+      <Filter>Game\Objects\ObjectFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectTraverse.h">
+      <Filter>Game\Objects\ObjectFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="BagFunction.h">
+      <Filter>Game\Objects\OtherObjects\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="BagBase.h">
+      <Filter>Game\Objects\OtherObjects\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Game\Objects\GameObject\Person</Filter>
+    </ClInclude>
+    <ClInclude Include="Npc.h">
+      <Filter>Game\Objects\GameObject\Npc</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Game\Objects\GameObject\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonFunction.h">
+      <Filter>Game\Objects\GameObject\Person</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterExtend.h">
+      <Filter>Game\Objects\GameObject\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="NpcExtend.h">
+      <Filter>Game\Objects\GameObject\Npc</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game\Objects\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerExtend.h">
+      <Filter>Game\Objects\GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Corpse.h">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClInclude>
+    <ClInclude Include="ResExtend.h">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClInclude>
+    <ClInclude Include="DropItem.h">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClInclude>
+    <ClInclude Include="ResAction.h">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClInclude>
+    <ClInclude Include="BagAction.h">
+      <Filter>Game\Objects\OtherObjects\Bag</Filter>
+    </ClInclude>
+    <ClInclude Include="Skill.h">
+      <Filter>Game\Objects\OtherObjects\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmSkill.h">
+      <Filter>Game\Objects\OtherObjects\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>Game\Objects\OtherObjects\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskExtend.h">
+      <Filter>Game\Objects\OtherObjects\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientTeam.h">
+      <Filter>Game\Objects\GameObject\Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamMember.h">
+      <Filter>Game\Objects\GameObject\Team</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamMemberExtend.h">
+      <Filter>Game\Objects\GameObject\Team</Filter>
+    </ClInclude>
+    <ClInclude Include="MailAction.h">
+      <Filter>Game\SomeFun\Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="Farm.h">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmMonster.h">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmTask.h">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmSpecialTask.h">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClInclude>
+    <ClInclude Include="BnsFilter.h">
+      <Filter>Game\Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTransaction.h">
+      <Filter>Game\Deal</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginPlayer.h">
+      <Filter>Game\Objects\GameObject\LoginPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginPlayerExtend.h">
+      <Filter>Game\Objects\GameObject\LoginPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskUpgradeMgr.h">
+      <Filter>Game\SomeFun\TaskUpgrade</Filter>
+    </ClInclude>
+    <ClInclude Include="UiSkill.h">
+      <Filter>Game\Objects\OtherObjects\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyExtend.h">
+      <Filter>Game\Script\Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyScript.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="DxOptimize.h">
+      <Filter>Game\SomeFun\DX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cat.h">
+      <Filter>Game\Objects\GameObject\Cat</Filter>
+    </ClInclude>
+    <ClInclude Include="CatExpend.h">
+      <Filter>Game\Objects\GameObject\Cat</Filter>
+    </ClInclude>
+    <ClInclude Include="BaiXianPracticeFieldServices.h">
+      <Filter>Game\SomeFun\BaiXianPracticeField</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\ClassInstance.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="FindPathScript.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Language.h">
+      <Filter>Text\Language</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpression.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpressionCalc.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\Log.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="GameExpression.h">
+      <Filter>Game\Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLPic.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLResManager.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\Script.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptExtend.h">
+      <Filter>Game\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\TimeTick.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamAuction.h">
+      <Filter>Game\SomeFun\TeamAuction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CmdLog.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmBoss.h">
+      <Filter>Game\SomeFun\Farm\BOSS</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmBossFish.h">
+      <Filter>Game\SomeFun\Farm\BOSS</Filter>
+    </ClInclude>
+    <ClInclude Include="FarmBossSkill.h">
+      <Filter>Game\SomeFun\Farm\BOSS</Filter>
+    </ClInclude>
+    <ClInclude Include="DungoenTeam.h">
+      <Filter>Game\SomeFun\DungoenTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMutilLanguageText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStruct.h">
+      <Filter>Game\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TransferScript.h">
+      <Filter>Game\Socket\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketConfig.h">
+      <Filter>Game\Socket\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ConsoleDLL\ConsoleClient.h">
+      <Filter>Game\Socket\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ConsoleDLL\SocketAPI.h">
+      <Filter>Game\Socket\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLClient.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLClientIoEvent.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\SocketBuffer.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BnsKorServer_IOCP\ServerCommon.h">
+      <Filter>Game\Socket\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="CrossAreaTeamService.h">
+      <Filter>Game\Team\CrossAreaTeam\Serivce</Filter>
+    </ClInclude>
+    <ClInclude Include="CrossAreaTeamRoom.h">
+      <Filter>Game\Team\CrossAreaTeam\Room</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleLog.h">
+      <Filter>Game\Console\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_SnowHole.h">
+      <Filter>Game\Script\BOSS\雪人洞</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_Common.h">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_Team.h">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_Item.h">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_Skill.h">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_Move.h">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_BossSkill.h">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLEchoException.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\ConditionPrint.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_Bitan.h">
+      <Filter>Game\Script\BOSS\雪玉宫</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_HukryongPrison.h">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_HukryongPrison_Boss_BuKa.h">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_Boss_Template.h">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeoutCheck.h">
+      <Filter>Game\SomeFun\TimeoutCheck</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\CLAsync.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_SacrificeGrave.h">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_SacrificeGrave_Boss_JeGukGun.h">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_HukryongPrison_Boss_ZaKan.h">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_HukryongPrison_Boss_MaGolKa.h">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_SacrificeGrave_Boss_JiangTieGang.h">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyTask_SacrificeGrave_Boss_FireGorilla.h">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClInclude>
+    <ClInclude Include="GameDetection.h">
+      <Filter>Game\GameLowDesign</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\LDasm.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MyTools\MyTools\LdrHeader.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsProjects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\Character.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLFile.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLGrammar.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLHook.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLLock.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLProcess.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLSearchBase.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLThread.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CPublic.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="SomeFun.cpp">
+      <Filter>Game\SomeFun</Filter>
+    </ClCompile>
+    <ClCompile Include="GameVariable.cpp">
+      <Filter>Game\Variable</Filter>
+    </ClCompile>
+    <ClCompile Include="GameFunction.cpp">
+      <Filter>Game\SomeFun</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSend.cpp">
+      <Filter>Game\SomeFun</Filter>
+    </ClCompile>
+    <ClCompile Include="GrammarFunction.cpp">
+      <Filter>Game\Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsScript.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsGameFun.cpp">
+      <Filter>Game\SomeFun</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanBase.cpp">
+      <Filter>Game\SomeFun\ScanBase</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsConfig.cpp">
+      <Filter>Text\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerKill.cpp">
+      <Filter>Game\SomeFun\PK</Filter>
+    </ClCompile>
+    <ClCompile Include="SwAccPkMgr.cpp">
+      <Filter>Game\SomeFun\PK</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniDump.cpp">
+      <Filter>Game\SomeFun\Dump</Filter>
+    </ClCompile>
+    <ClCompile Include="InstanceZoneScript.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseObject.cpp">
+      <Filter>Game\Objects\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>Game\Objects\OtherObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLErrMsg.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsHook.cpp">
+      <Filter>Game\SomeFun\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectFunction.cpp">
+      <Filter>Game\Objects\ObjectFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectTraverse.cpp">
+      <Filter>Game\Objects\ObjectFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="BagFunction.cpp">
+      <Filter>Game\Objects\OtherObjects\Bag</Filter>
+    </ClCompile>
+    <ClCompile Include="BagBase.cpp">
+      <Filter>Game\Objects\OtherObjects\Bag</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Game\Objects\GameObject\Person</Filter>
+    </ClCompile>
+    <ClCompile Include="Npc.cpp">
+      <Filter>Game\Objects\GameObject\Npc</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Game\Objects\GameObject\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonFunction.cpp">
+      <Filter>Game\Objects\GameObject\Person</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterExtend.cpp">
+      <Filter>Game\Objects\GameObject\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="NpcExtend.cpp">
+      <Filter>Game\Objects\GameObject\Npc</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\Objects\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerExtend.cpp">
+      <Filter>Game\Objects\GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Corpse.cpp">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClCompile>
+    <ClCompile Include="ResExtend.cpp">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClCompile>
+    <ClCompile Include="DropItem.cpp">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClCompile>
+    <ClCompile Include="ResAction.cpp">
+      <Filter>Game\Objects\OtherObjects\Corpse</Filter>
+    </ClCompile>
+    <ClCompile Include="BagAction.cpp">
+      <Filter>Game\Objects\OtherObjects\Bag</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>Game\Objects\OtherObjects\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmSkill.cpp">
+      <Filter>Game\Objects\OtherObjects\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Task.cpp">
+      <Filter>Game\Objects\OtherObjects\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskExtend.cpp">
+      <Filter>Game\Objects\OtherObjects\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientTeam.cpp">
+      <Filter>Game\Objects\GameObject\Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamMember.cpp">
+      <Filter>Game\Objects\GameObject\Team</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamMemberExtend.cpp">
+      <Filter>Game\Objects\GameObject\Team</Filter>
+    </ClCompile>
+    <ClCompile Include="MailAction.cpp">
+      <Filter>Game\SomeFun\Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="Farm.cpp">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmMonster.cpp">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmTask.cpp">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmSpecialTask.cpp">
+      <Filter>Game\SomeFun\Farm</Filter>
+    </ClCompile>
+    <ClCompile Include="BnsFilter.cpp">
+      <Filter>Game\Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTransaction.cpp">
+      <Filter>Game\Deal</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginPlayer.cpp">
+      <Filter>Game\Objects\GameObject\LoginPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginPlayerExtend.cpp">
+      <Filter>Game\Objects\GameObject\LoginPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskUpgradeMgr.cpp">
+      <Filter>Game\SomeFun\TaskUpgrade</Filter>
+    </ClCompile>
+    <ClCompile Include="UiSkill.cpp">
+      <Filter>Game\Objects\OtherObjects\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyExtend.cpp">
+      <Filter>Game\Script\Daily</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyScript.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="DxOptimize.cpp">
+      <Filter>Game\SomeFun\DX</Filter>
+    </ClCompile>
+    <ClCompile Include="Cat.cpp">
+      <Filter>Game\Objects\GameObject\Cat</Filter>
+    </ClCompile>
+    <ClCompile Include="CatExpend.cpp">
+      <Filter>Game\Objects\GameObject\Cat</Filter>
+    </ClCompile>
+    <ClCompile Include="BaiXianPracticeFieldServices.cpp">
+      <Filter>Game\SomeFun\BaiXianPracticeField</Filter>
+    </ClCompile>
+    <ClCompile Include="FindPathScript.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Language.cpp">
+      <Filter>Text\Language</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpression.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpressionCalc.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\Log.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="GameExpression.cpp">
+      <Filter>Game\Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLPic.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\Script.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptExtend.cpp">
+      <Filter>Game\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\TimeTick.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamAuction.cpp">
+      <Filter>Game\SomeFun\TeamAuction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CmdLog.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmBoss.cpp">
+      <Filter>Game\SomeFun\Farm\BOSS</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmBossFish.cpp">
+      <Filter>Game\SomeFun\Farm\BOSS</Filter>
+    </ClCompile>
+    <ClCompile Include="FarmBossSkill.cpp">
+      <Filter>Game\SomeFun\Farm\BOSS</Filter>
+    </ClCompile>
+    <ClCompile Include="DungoenTeam.cpp">
+      <Filter>Game\SomeFun\DungoenTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="TransferScript.cpp">
+      <Filter>Game\Socket\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketConfig.cpp">
+      <Filter>Game\Socket\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ConsoleDLL\ConsoleClient.cpp">
+      <Filter>Game\Socket\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ConsoleDLL\SocketAPI.cpp">
+      <Filter>Game\Socket\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLClient.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLClientIoEvent.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\SocketBuffer.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="CrossAreaTeamService.cpp">
+      <Filter>Game\Team\CrossAreaTeam\Serivce</Filter>
+    </ClCompile>
+    <ClCompile Include="CrossAreaTeamRoom.cpp">
+      <Filter>Game\Team\CrossAreaTeam\Room</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleLog.cpp">
+      <Filter>Game\Console\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_SnowHole.cpp">
+      <Filter>Game\Script\BOSS\雪人洞</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_Common.cpp">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_Team.cpp">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_Item.cpp">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_Skill.cpp">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_Move.cpp">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_BossSkill.cpp">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_Bitan.cpp">
+      <Filter>Game\Script\BOSS\雪玉宫</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_HukryongPrison.cpp">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_HukryongPrison_Boss_BuKa.cpp">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeoutCheck.cpp">
+      <Filter>Game\SomeFun\TimeoutCheck</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_Boss_Template.cpp">
+      <Filter>Game\Script\BOSS\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\CLAsync.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_SacrificeGrave.cpp">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_SacrificeGrave_Boss_JeGukGun.cpp">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_HukryongPrison_Boss_ZaKan.cpp">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_HukryongPrison_Boss_MaGolKa.cpp">
+      <Filter>Game\Script\BOSS\黑龙教地下监狱</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_SacrificeGrave_Boss_JiangTieGang.cpp">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyTask_SacrificeGrave_Boss_FireGorilla.cpp">
+      <Filter>Game\Script\BOSS\遗忘墓地</Filter>
+    </ClCompile>
+    <ClCompile Include="GameDetection.cpp">
+      <Filter>Game\GameLowDesign</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\LDasm.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MyTools\MyTools\LdrHeader.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

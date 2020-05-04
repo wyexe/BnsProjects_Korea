@@ -1,0 +1,164 @@
+2016.4.26
+	添加CLoginPlayer类, 获取选择角色界面的服务器ID
+	交易发包添加ServerId, 服务器那边也加了ServerId的判断
+	完全进入游戏后, 把游戏最小化->正常置顶显示->最小化 来激活判断是否剑灵模式 =>CSomeFun::SetGameTitle()
+2016.4.26
+	添加脚本命令"发呆"
+	添加脚本命令"给仓库号物品()" [收货]
+	修正视角切换失败
+2016.4.27
+	添加2个模式"黑号模式","白号模式"
+	修改PKSchedule.txt -> TaskUpgradeSchedule.txt
+	修改PKLog.txt -> AccountLog.txt
+2016.4.28
+	添加气宗的技能ID -> GameStruct.h
+	修改倒地技能的调用方式, CFarmSkill::UseFloorSkill()
+	添加气宗的技能施法连招
+2016.4.30
+	修改倒地技能的调用方式, 改成UI判断!
+	添加圆形走位, 只适合气宗的气功姿势用
+	添加单独的打BOSS走位函数CFarmBoss::ExistSpecialMonsterName 和 CFarmBoss::KillBoss_2B7_B (已经取消, 但是函数不删)
+2016.5.01
+	添加取消交易CALL
+	添加命令"设置圆形走位(BossName,[Point],Dis)" 在清怪过程中，发现这样的怪物,会单独处理。 进入圆形走位处理. Point是按照一个圆心走.Dis是指离圆心多远的距离跑远 这个命令只适合气宗的气功姿势走位
+	添加气功近战打怪的时候, 每3s走位一次!
+	修复收货的问题.
+	添加合并区的问题!
+2016.5.02
+	将遍历UI技能修改成直接读内存, 不从UI遍历上取了
+	关闭转盘前，先转一发!
+	将IP类型放到配置文件去Config->Server=Server|Local|Test
+	添加快速修理在Script_Sleep里面。 武器持久低于5的时候，背包有快速修理锤子会自动使用!
+	修复动画判断偶尔无效的问题。 使用新的数据! 在CPersonFunction::IsGameChart()
+2016.5.03
+	添加交易记录保存到服务器  角色名, 发起交易的仓库号名字,角色的IP（韩国），物品名字，物品数量， 交易金币。交易时间。
+2016.5.05
+	CLScript.cpp添加SEH异常分类!
+	防止交易按Y受其他窗口影响, 把原本接受交易是按Y的， 改成CALL。 -> CPlayerTransaction::AcceptDeal
+	把关闭窗口CALL修改成新数据. CGameUi::CloseGameWindow
+	服务器交易, 改成心跳模式， 10秒内没心跳就删除旧的数据!
+	修改窗口UI遍历方式!
+2016.5.9
+	添加新日志(堆栈追踪)
+2016.5.10
+	组队后, 自动切换到队长的频道! -> CClientTeam::JoinTeam_Member
+	Add if(队伍人数!=,Parm,回调) -> Script_JmpFunction
+	Add if(队伍不在一个频道,0,回调)
+2016.5.14
+	添加5分钟内主线ID没变化就掉,并且添加帐号日志
+	修改坐标变化为1s之内都没超过2m
+2016.5.16
+	修正服务器验证的send改成线程发送!
+	修正在控制台启动的时候可以兼容dlg注入!
+	捡尸体后的F 从2s -> 1s
+	修正倒地后的技能只用一个
+2016.5.26
+	BOSS技能大改
+	Server开启100个Send线程, 超时一律改成60s. 超时后不做掉线处理
+	Client 超时一律改成60s, 最多3次超时. 就会自动掉线
+	注入dlg界面添加, 双击遍历的支线任务ID自动打开脚本文件
+	CObjectTraverse::GetMaxLoginPlayerCount->CObjectTraverse::GetLoginPlayerCount
+	添加CObjectTraverse::GetMaxLoginPlayerCount 获取最大角色上限数量
+	wsprintfW->swprintf_s
+2016.5.27
+	走路出现过图就break;!
+2016.5.31
+	Fix 自动更新器 关闭进程失败
+	Fix "引BOSS"
+	Client 断开连接后重新connect
+	break Connect后, 只关闭本进程!
+2016.11.1
+	修改副本组队逻辑
+		副本组队之前判断是否有队伍(是否有队友,GetTeamMemberCount!=0), 如果有队友, 就不进行组队了.
+		副本组队之前判断没队友, 先发送删除自身在服务器的队伍 去服务器! 然后再进行组队;
+		副本组队组满人后, 发送"只读"指令给副本队伍, 不允许别人再进! 哪怕少人了.
+		副本离队修改为, 只删除自己， 当副本队伍只有一个人的时候， 才解散队伍。
+	添加副本进度
+		添加指令"队伍集合(ScheduleName, ScheduleIndex, AtleaseTeamMember)"
+			队伍集合的时候检查周围怪物
+			获取服务器上其他成员的进度
+			更新自己的进度
+	修改Socket逻辑
+		使用Event, 来减少线程锁的反复判断。 优化性能
+		使用智能指针, 对于保存Client的信息 和 接收发送Client 分成2个结构。 优化掉线率。
+	Fix "遁术(CityId)"
+		添加城市ID的判断的条件
+	Add "if 当前城市ID!="
+		可以使用多个城市ID的参数
+	Update "if 当前地图!="
+		可以使用多个地图ID的参数
+	Add "设置云配置"
+		可以在脚本里面修改云配置
+	Update 客户端的Socket
+		添加一个锁, 必须发送完毕并且接收回下一个包才能发送下一个包.
+	Add ConsoleDLL的心跳
+		添加Console和Server的心跳
+	Fix 判断队友是否掉线的数据
+
+	Add 特殊坐标判断
+		当调用MoveToPoint的时候, 会判断TarPoint是否特殊坐标. 是的话， 就使用特殊的加速。 放置在CGameVariable::SetSpeed_By_SpecialPoint
+
+2016.11.3
+	Add Script "黑森林防守"
+	Fix 无法从服务器获取创建角色日期(中途开始,跳过创建角色), 就把用时设置=0
+2016.11.3
+	Update CFarmMonster::Move_To_Monster 里面给出现读图添加输出
+	Add 在遍历的时候, 把当前HP=0的也给过滤掉!
+	Add 判断怪物死亡(在初始化怪物的时候, 记录旧的MaxHp和Id. 然后如果判断如果这个变了。 那肯定就是被释放了!)
+2016.11.4
+	Add 本地的AccountLog.txt, PlayerDaily.txt, TaskUpgradeSchedule.txt 内容保存到服务器, 本地也存有一份
+	Add Script "设置队伍云进度", 可以在脚本设置当前人物的副本进度
+	Fix CPlayer::IsDead() 怪物是否死亡的判断 修改成, 获取怪物的时候先保存怪物的MaxHp和ID。 然后判断ID或者MaxHp变了。 那肯定是怪物挂了
+	Add CPlayer::GetLeftPoint() 获取目标的左边的坐标(这个左边是相对位置)
+	Add CPlayer::GetRightPoint() 获取目标的右边的坐标(这个右边是相对位置)
+2016.11.7
+	Add Script "召回猫"
+	Fix CFarmSpeialTask::HitSnowBallToBoss 第一个雪人BOSS掉下来后， 防止卡住 柱子， 要绕柱子跑过去!
+2016.11.8
+	Add CTeamMemberExtend::GetTeamMember_By_LessPercentHp. 判断队友是否低于%X 的血量
+2016.11.10
+	Add Script "副本走最近点" 必须要走到终点
+2016.11.11
+	Add CPersonFunction::WaitToWarStatus. 等待战斗状态结束(里面包含打怪)
+	Add Script "副本整理背包" 丢掉所有的绿色和白色和蓝色的装备 && 开启所有的日常功勋盒 && 开启所有的战利品 && 鬼门关的八卦箱子 && 分解衣服得衣料
+	Add 物品颜色 "传说"
+	Add Script "等待副本BOSS死亡" 除非所有人都死了, 否则一直等待被队友复活! && 暂取消3分钟不动
+	Update 打BOSS的时候死亡会尝试按1复活。 
+	Update 捡尸体的时候, 出现确认窗口 会按Y
+2016.11.11
+	Update 捡物之后, 判断竞拍窗口出现, 那么如果是队长, 那就按Y， 否则按N
+2016.11.12
+	Fix 鬼门关防守的时候, 聊天框内出现了鬼门关解封了后。 就把聊天框内的东西给清掉。 防止下次进来错误判断
+2016.11.13
+	Add Script "捡盾反弹" 对付雪域宫的伊鲁卡影子专用
+	Update Script "等待开门" 第一个参数=0的时候表示找最近的门, =!XX的时候, 表示过滤掉XX以外的最近的门
+	Add CFarmBossFish::TakeShield 按照僵尸尸体的ID来分配队伍顺序捡
+	Add define BnsProject_Dlg_China, 表示国服编译
+	Fix CResAction::TakeDropItem 捡物的时候, 如果出现竞拍, 判断是队长就按Y，否则按N
+	Update 记录坐标, 全部改成设置坐标
+	Add GameDlg 遍历怪物,Npc,尸体 的名字转换成韩文
+	Add GameVariable L"强制停止坐标超时", 设置=1表示交易的时候不执行坐标超时
+2016.11.18
+	Add 控制台添加清除7天前的AccountLog 和 PlayerDaily. TaskUpgradeSchedule在50条以上记录的话清除前面20条
+	Add Script "检查物品数量" 判断是否有这个物品， 没有的话不往下执行
+	Add Script "if(是否开门,[DoorName,X,Y,Z])" 判断范围3m之内的门, 是否开了
+	Add Script "执行特殊任务(分裂迷宫扔炸弹 || 分裂迷宫转盘 || 分裂迷宫法器强化队长)"
+	Update Script "等待开门" 不执行坐标超时检查
+	Update Script "瞬移",  必须要非战斗状态下
+	Add Monster.Maze_GetShieldColor(). 获取分裂迷宫队长罩子的颜色
+	Add Test Projct!
+	Add 上次重登原因 in Console
+2016.11.23
+	Restore 保存AccountLog->Server
+	Add Language.cpp
+	修正 设置优先后, 立马return。 必须全部排列好
+2016.12.25
+	Update 服务器修改新的日志系统
+	Update 取宝石 从循环10次 -> while
+	Add if(模式,XX)
+	Fix 召唤模式不换角色!
+2017.5.1
+	Add File FarmBossSkill.cpp  while Moving while Kill Monster
+	Add KillMonster Round Support Warlock
+	Fix Hook Monster Skill ID Convert to Name
+	Fix Not Handle Cloth in 处理副本物品

@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="China|Win32">
+      <Configuration>China</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TaiWan|Win32">
+      <Configuration>TaiWan</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46A994FB-9448-4293-9BCE-31650740F60C}</ProjectGuid>
+    <RootNamespace>BnsProjects_dlg</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='China|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='China|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\include;$(IncludePath);..\BnsProjects;..\..\MyTools;$(DXSDK_DIR)Include;</IncludePath>
+    <LibraryPath>..\lib;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>C:\BnsKor\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\lib;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <IncludePath>..\include;$(IncludePath);..\BnsProjects;..\..\MyTools;$(DXSDK_DIR)Include</IncludePath>
+    <OutDir>C:\BnsKor\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\lib;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <IncludePath>..\include;$(IncludePath);..\BnsProjects;..\..\MyTools;$(DXSDK_DIR)Include</IncludePath>
+    <OutDir>C:\BnsKor\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='China|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>..\lib;$(LibraryPath);$(DXSDK_DIR)Lib\x86</LibraryPath>
+    <IncludePath>..\include;$(IncludePath);..\BnsProjects;..\..\MyTools;$(DXSDK_DIR)Include;</IncludePath>
+    <OutDir>C:\BnsKor\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>BnsProject_Korea;BnsProject_Dlg;WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\BnsProjects_dlg.def</ModuleDefinitionFile>
+      <AdditionalDependencies>d3d9.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>BnsProject_Korea;BnsProject_Dlg;WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\BnsProjects_dlg.def</ModuleDefinitionFile>
+      <AdditionalDependencies>d3d9.lib;d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>false</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>BnsProject_TaiWan;BnsProject_Dlg;WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\BnsProjects_dlg.def</ModuleDefinitionFile>
+      <AdditionalDependencies>d3d9.lib;d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>false</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='China|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>BnsProject_Dlg_China;BnsProject_Dlg;WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\BnsProjects_dlg.def</ModuleDefinitionFile>
+      <AdditionalDependencies>d3d9.lib;d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\MyTools\MyTools\Character.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLErrMsg.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpression.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLExpressionCalc.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLFile.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLGrammar.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLHook.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLLock.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLNoModuleDLL.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLPic.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLProcess.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLSearchBase.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CLThread.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CmdLog.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\CPublic.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\LDasm.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\LdrHeader.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\Log.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\Script.cpp" />
+    <ClCompile Include="..\..\MyTools\MyTools\TimeTick.cpp" />
+    <ClCompile Include="..\BnsProjects\BagAction.cpp" />
+    <ClCompile Include="..\BnsProjects\BagBase.cpp" />
+    <ClCompile Include="..\BnsProjects\BagFunction.cpp" />
+    <ClCompile Include="..\BnsProjects\BaiXianPracticeFieldServices.cpp" />
+    <ClCompile Include="..\BnsProjects\BaseObject.cpp" />
+    <ClCompile Include="..\BnsProjects\BnsConfig.cpp" />
+    <ClCompile Include="..\BnsProjects\BnsGameFun.cpp" />
+    <ClCompile Include="..\BnsProjects\BnsHook.cpp" />
+    <ClCompile Include="..\BnsProjects\BnsScript.cpp" />
+    <ClCompile Include="..\BnsProjects\Cat.cpp" />
+    <ClCompile Include="..\BnsProjects\CatExpend.cpp" />
+    <ClCompile Include="..\BnsProjects\ClientTeam.cpp" />
+    <ClCompile Include="..\BnsProjects\ConsoleLog.cpp" />
+    <ClCompile Include="..\BnsProjects\Corpse.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyScript.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_Bitan.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_BossSkill.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_Boss_Template.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_Common.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_HukryongPrison.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_HukryongPrison_Boss_BuKa.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_HukryongPrison_Boss_MaGolKa.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_HukryongPrison_Boss_ZaKan.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_Item.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_Move.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_SacrificeGrave.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_SacrificeGrave_Boss_FireGorilla.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_SacrificeGrave_Boss_JeGukGun.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_SacrificeGrave_Boss_JiangTieGang.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_Skill.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_SnowHole.cpp" />
+    <ClCompile Include="..\BnsProjects\DailyTask_Team.cpp" />
+    <ClCompile Include="..\BnsProjects\DropItem.cpp" />
+    <ClCompile Include="..\BnsProjects\DxOptimize.cpp" />
+    <ClCompile Include="..\BnsProjects\Farm.cpp" />
+    <ClCompile Include="..\BnsProjects\FarmBoss.cpp" />
+    <ClCompile Include="..\BnsProjects\FarmBossFish.cpp" />
+    <ClCompile Include="..\BnsProjects\FarmBossSkill.cpp" />
+    <ClCompile Include="..\BnsProjects\FarmMonster.cpp" />
+    <ClCompile Include="..\BnsProjects\FarmSkill.cpp" />
+    <ClCompile Include="..\BnsProjects\FarmSpecialTask.cpp" />
+    <ClCompile Include="..\BnsProjects\FarmTask.cpp" />
+    <ClCompile Include="..\BnsProjects\BnsFilter.cpp" />
+    <ClCompile Include="..\BnsProjects\FindPathScript.cpp" />
+    <ClCompile Include="..\BnsProjects\GameExpression.cpp" />
+    <ClCompile Include="..\BnsProjects\GameFunction.cpp" />
+    <ClCompile Include="..\BnsProjects\GameSend.cpp" />
+    <ClCompile Include="..\BnsProjects\GameUI.cpp" />
+    <ClCompile Include="..\BnsProjects\GrammarFunction.cpp" />
+    <ClCompile Include="..\BnsProjects\InstanceZoneScript.cpp" />
+    <ClCompile Include="..\BnsProjects\GameVariable.cpp" />
+    <ClCompile Include="..\BnsProjects\Language.cpp" />
+    <ClCompile Include="..\BnsProjects\LoginPlayer.cpp" />
+    <ClCompile Include="..\BnsProjects\LoginPlayerExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\MailAction.cpp" />
+    <ClCompile Include="..\BnsProjects\MiniDump.cpp" />
+    <ClCompile Include="..\BnsProjects\Monster.cpp" />
+    <ClCompile Include="..\BnsProjects\MonsterExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\Npc.cpp" />
+    <ClCompile Include="..\BnsProjects\NpcExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\ObjectFunction.cpp" />
+    <ClCompile Include="..\BnsProjects\ObjectTraverse.cpp" />
+    <ClCompile Include="..\BnsProjects\Person.cpp" />
+    <ClCompile Include="..\BnsProjects\PersonFunction.cpp" />
+    <ClCompile Include="..\BnsProjects\Player.cpp" />
+    <ClCompile Include="..\BnsProjects\PlayerExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\PlayerKill.cpp" />
+    <ClCompile Include="..\BnsProjects\ResAction.cpp" />
+    <ClCompile Include="..\BnsProjects\ResExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\ScanBase.cpp" />
+    <ClCompile Include="..\BnsProjects\ScriptExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\Skill.cpp" />
+    <ClCompile Include="..\BnsProjects\SomeFun.cpp" />
+    <ClCompile Include="..\BnsProjects\SwAccPkMgr.cpp" />
+    <ClCompile Include="..\BnsProjects\Task.cpp" />
+    <ClCompile Include="..\BnsProjects\TaskExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\TeamAuction.cpp" />
+    <ClCompile Include="..\BnsProjects\TeamMember.cpp" />
+    <ClCompile Include="..\BnsProjects\TeamMemberExtend.cpp" />
+    <ClCompile Include="..\BnsProjects\TimeoutCheck.cpp" />
+    <ClCompile Include="..\BnsProjects\UiSkill.cpp" />
+    <ClCompile Include="BnsProjects_dlg.cpp" />
+    <ClCompile Include="FunctionTest.cpp" />
+    <ClCompile Include="GameCmdDlg.cpp" />
+    <ClCompile Include="GameDlg.cpp" />
+    <ClCompile Include="RecordPointDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TaiWan|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='China|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\MyTools\MyTools\Character.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLEchoException.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLErrMsg.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpression.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLExpressionCalc.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLFile.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLGrammar.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLHead.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLHook.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLLock.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLNoModuleDLL.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLPic.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLProcess.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLPublic.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLResManager.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLSearchBase.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CLThread.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\CmdLog.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\ConditionPrint.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\LDasm.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\LdrHeader.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\Log.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\Script.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\TimeTick.h" />
+    <ClInclude Include="..\..\MyTools\MyTools\ToolsPublic.h" />
+    <ClInclude Include="..\BnsProjects\BagAction.h" />
+    <ClInclude Include="..\BnsProjects\BagBase.h" />
+    <ClInclude Include="..\BnsProjects\BagFunction.h" />
+    <ClInclude Include="..\BnsProjects\BaiXianPracticeFieldServices.h" />
+    <ClInclude Include="..\BnsProjects\BaseObject.h" />
+    <ClInclude Include="..\BnsProjects\BnsConfig.h" />
+    <ClInclude Include="..\BnsProjects\BnsGameFun.h" />
+    <ClInclude Include="..\BnsProjects\BnsHook.h" />
+    <ClInclude Include="..\BnsProjects\BnsScript.h" />
+    <ClInclude Include="..\BnsProjects\Cat.h" />
+    <ClInclude Include="..\BnsProjects\CatExpend.h" />
+    <ClInclude Include="..\BnsProjects\ClientTeam.h" />
+    <ClInclude Include="..\BnsProjects\ConsoleLog.h" />
+    <ClInclude Include="..\BnsProjects\Corpse.h" />
+    <ClInclude Include="..\BnsProjects\DailyExtend.h" />
+    <ClInclude Include="..\BnsProjects\DailyScript.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_Bitan.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_BossSkill.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_Boss_Template.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_Common.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_HukryongPrison.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_HukryongPrison_Boss_BuKa.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_HukryongPrison_Boss_MaGolKa.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_HukryongPrison_Boss_ZaKan.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_Item.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_Move.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_SacrificeGrave.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_SacrificeGrave_Boss_FireGorilla.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_SacrificeGrave_Boss_JeGukGun.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_SacrificeGrave_Boss_JiangTieGang.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_Skill.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_SnowHole.h" />
+    <ClInclude Include="..\BnsProjects\DailyTask_Team.h" />
+    <ClInclude Include="..\BnsProjects\DropItem.h" />
+    <ClInclude Include="..\BnsProjects\DxOptimize.h" />
+    <ClInclude Include="..\BnsProjects\Farm.h" />
+    <ClInclude Include="..\BnsProjects\FarmBoss.h" />
+    <ClInclude Include="..\BnsProjects\FarmBossFish.h" />
+    <ClInclude Include="..\BnsProjects\FarmBossSkill.h" />
+    <ClInclude Include="..\BnsProjects\FarmMonster.h" />
+    <ClInclude Include="..\BnsProjects\FarmSkill.h" />
+    <ClInclude Include="..\BnsProjects\FarmSpecialTask.h" />
+    <ClInclude Include="..\BnsProjects\FarmTask.h" />
+    <ClInclude Include="..\BnsProjects\BnsFilter.h" />
+    <ClInclude Include="..\BnsProjects\FindPathScript.h" />
+    <ClInclude Include="..\BnsProjects\GameExpression.h" />
+    <ClInclude Include="..\BnsProjects\GameFunction.h" />
+    <ClInclude Include="..\BnsProjects\GameMutilLanguageText.h" />
+    <ClInclude Include="..\BnsProjects\GameSend.h" />
+    <ClInclude Include="..\BnsProjects\GameStruct.h" />
+    <ClInclude Include="..\BnsProjects\GameUI.h" />
+    <ClInclude Include="..\BnsProjects\GrammarFunction.h" />
+    <ClInclude Include="..\BnsProjects\InstanceZoneScript.h" />
+    <ClInclude Include="..\BnsProjects\GameVariable.h" />
+    <ClInclude Include="..\BnsProjects\Language.h" />
+    <ClInclude Include="..\BnsProjects\LoginPlayer.h" />
+    <ClInclude Include="..\BnsProjects\LoginPlayerExtend.h" />
+    <ClInclude Include="..\BnsProjects\MailAction.h" />
+    <ClInclude Include="..\BnsProjects\MiniDump.h" />
+    <ClInclude Include="..\BnsProjects\Monster.h" />
+    <ClInclude Include="..\BnsProjects\MonsterExtend.h" />
+    <ClInclude Include="..\BnsProjects\Npc.h" />
+    <ClInclude Include="..\BnsProjects\NpcExtend.h" />
+    <ClInclude Include="..\BnsProjects\ObjectFunction.h" />
+    <ClInclude Include="..\BnsProjects\ObjectTraverse.h" />
+    <ClInclude Include="..\BnsProjects\Person.h" />
+    <ClInclude Include="..\BnsProjects\PersonFunction.h" />
+    <ClInclude Include="..\BnsProjects\Player.h" />
+    <ClInclude Include="..\BnsProjects\PlayerExtend.h" />
+    <ClInclude Include="..\BnsProjects\PlayerKill.h" />
+    <ClInclude Include="..\BnsProjects\ResAction.h" />
+    <ClInclude Include="..\BnsProjects\ResExtend.h" />
+    <ClInclude Include="..\BnsProjects\ScanBase.h" />
+    <ClInclude Include="..\BnsProjects\ScriptExtend.h" />
+    <ClInclude Include="..\BnsProjects\Skill.h" />
+    <ClInclude Include="..\BnsProjects\SomeFun.h" />
+    <ClInclude Include="..\BnsProjects\SwAccPkMgr.h" />
+    <ClInclude Include="..\BnsProjects\Task.h" />
+    <ClInclude Include="..\BnsProjects\TaskExtend.h" />
+    <ClInclude Include="..\BnsProjects\TeamAuction.h" />
+    <ClInclude Include="..\BnsProjects\TeamMember.h" />
+    <ClInclude Include="..\BnsProjects\TeamMemberExtend.h" />
+    <ClInclude Include="..\BnsProjects\TimeoutCheck.h" />
+    <ClInclude Include="..\BnsProjects\UiSkill.h" />
+    <ClInclude Include="BnsProjects_dlg.h" />
+    <ClInclude Include="FunctionTest.h" />
+    <ClInclude Include="GameCmdDlg.h" />
+    <ClInclude Include="GameDlg.h" />
+    <ClInclude Include="RecordPointDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BnsProjects_dlg.def" />
+    <None Include="res\BnsProjects_dlg.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BnsProjects_dlg.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="BnsProjects_dlg.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
